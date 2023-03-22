@@ -38,3 +38,21 @@
 // - 퇴각검색, 재귀호출 시 스택프레임이 쌓이고 pop되는 스택의 특징을 이용하여 
 // - 탐색 가능한 이전의 경우로 돌아가 다시 탐색하는 것. 
 // - 조건을 만족하는 한 모든 경우의 수를 탐색
+
+package codingTest;
+
+/**
+ * RecursionBasic
+ */
+public class RecursionBasic {
+    public static int factorial(int n){
+        // 탈출 조건
+        if(n<1){
+            return 1;
+        }
+        return n * factorial(n-1); 
+    }
+    public static void main(String[] args) {
+        System.out.println(factorial(5));
+    }
+}

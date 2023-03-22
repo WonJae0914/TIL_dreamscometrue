@@ -1,3 +1,5 @@
+package codingTest;
+
 public class coding0321{
 // 문제 설명
 // 군침이는 과수원에서 귤을 수확했습니다. 군침이는 수확한 귤 중 'k'개를 골라 상자 하나에 담아 판매하려고 합니다. 
