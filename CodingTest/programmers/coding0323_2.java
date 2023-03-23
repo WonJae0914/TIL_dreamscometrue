@@ -1,5 +1,6 @@
 package CodingTest.programmers;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
@@ -36,17 +37,20 @@ import java.util.PriorityQueue;
 
 public class coding0323_2 {
 
-    public int solution(int[] priorities, int location) {
+    public static int solution(int[] priorities, int location) {
         int answer = 0;
         // 1. 큰 수가 우선순위를 갖는 우선순위 큐.
+        System.out.println(Arrays.toString(priorities));
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         
         // 2. priorities값을 우선순위 큐에 담는다.
         for(int n : priorities){
             pq.offer(n);
         }
+        System.out.println(pq);
 
         // 3. 큐가 빌 때 까지 반복 == 모든 대기목록이 비워질 때 까지.
+
         while(!pq.isEmpty()){
             // 4. 큐에서 나오는 값과 매칭되는 경우를 탐색.
             for(int i = 0;i<priorities.length;i++){
@@ -60,5 +64,10 @@ public class coding0323_2 {
             }
         }
         return answer;
+    }
+
+    public static void main(String[] args) {
+        int[] priorities = {2, 1, 3, 2};
+        System.out.println(solution(priorities,2));
     }
 }
