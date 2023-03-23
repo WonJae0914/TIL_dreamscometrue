@@ -39,27 +39,26 @@ public class coding0323_2 {
 
     public static int solution(int[] priorities, int location) {
         int answer = 0;
-        // 1. 큰 수가 우선순위를 갖는 우선순위 큐.
-        System.out.println(Arrays.toString(priorities));
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        
-        // 2. priorities값을 우선순위 큐에 담는다.
-        for(int n : priorities){
-            pq.offer(n);
-        }
-        System.out.println(pq);
 
-        // 3. 큐가 빌 때 까지 반복 == 모든 대기목록이 비워질 때 까지.
+        // 최소 힙 -> 최대 힙 
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+
+        // 최우선 큐로 바꾸기 
+        for(int num : priorities){
+            pq.add(num);
+        }
+
+        // 최우선 큐에서 우선순위 값을 하나씩 뽑아 이전 배열과 비교하여 같을 때 인덱스 값 뽑기 
+        // 최우선 큐가 빌때까지 반복문 돌려야 한다.
 
         while(!pq.isEmpty()){
-            // 4. 큐에서 나오는 값과 매칭되는 경우를 탐색.
-            for(int i = 0;i<priorities.length;i++){
-                // 5. 값만 일치하는 경우 해당 문서 출력.
-                if(pq.peek() == priorities[i] ){
+            for(int i=0; i<priorities.length; i++){
+                if(pq.peek()==priorities[i]){
                     pq.poll();
                     answer++;
-                    // 6. 값과 위치가 모두 일치하면 answer을 반환.
-                    if(location == i ) return answer;
+                    if(location == i) {
+                        return answer;   
+                    }
                 }
             }
         }
@@ -67,7 +66,7 @@ public class coding0323_2 {
     }
 
     public static void main(String[] args) {
-        int[] priorities = {2, 1, 3, 2};
-        System.out.println(solution(priorities,2));
+        int[] priorities = {1,1,9,1,1,1};
+        System.out.println(solution(priorities,4));
     }
 }
