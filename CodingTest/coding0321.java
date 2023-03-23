@@ -1,4 +1,4 @@
-package codingTest;
+package CodingTest;
 
 public class coding0321{
 // 문제 설명
