@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm.Recursion;
 
 public class Recursion {
 

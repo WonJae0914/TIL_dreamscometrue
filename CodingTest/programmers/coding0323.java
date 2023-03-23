@@ -1,4 +1,4 @@
-package CodingTest;
+package CodingTest.programmers;
 // 재귀함수문제
 
 // 문제 설명

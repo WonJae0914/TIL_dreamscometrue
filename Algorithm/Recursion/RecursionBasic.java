@@ -39,7 +39,7 @@
 // - 탐색 가능한 이전의 경우로 돌아가 다시 탐색하는 것. 
 // - 조건을 만족하는 한 모든 경우의 수를 탐색
 
-package Algorithm;
+package Algorithm.Recursion;
 
 /**
  * RecursionBasic
