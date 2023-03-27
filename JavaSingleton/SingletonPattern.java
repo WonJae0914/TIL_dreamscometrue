@@ -20,10 +20,5 @@ public class SingletonPattern {
 
     public static void main(String[] args) {
         SingletonPattern single = SingletonPattern.getInstance();
-
-
-
-    
     }
-    
 }
