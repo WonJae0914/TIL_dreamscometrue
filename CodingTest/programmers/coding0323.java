@@ -62,11 +62,10 @@ package CodingTest.programmers;
 //   AAEU, 
 //     AAEUA, AAEUE, AAEUI, AAEUO, AAEUU,
  
-// https://velog.io/@gyyoon4u/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4Java-%EB%AA%A8%EC%9D%8C-%EC%82%AC%EC%A0%84
 public class coding0323 {
     public int solution(String word) {
         int answer = 0;
-        
+ 
         return answer;
     }
 
