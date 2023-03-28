@@ -22,16 +22,14 @@ public class PropertiesTest {
     // 프로퍼티 파일을 읽어옴.
     properties.load(new FileInputStream(path));
     
+    // 프로퍼티 파일의 내용을 출력.
     String driver = properties.getProperty("driver");
     System.out.println(driver);
-    String url = properties.getProperty("url");
+    String url = properties.getProperty("url"); // key값을 넣어서 value값을 가져옴
     System.out.println(url);
     String username = properties.getProperty("username");
     System.out.println(username);
     String password = properties.getProperty("password");
     System.out.println(password);
-
-
-
     }
 }
