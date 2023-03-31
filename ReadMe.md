@@ -1,25 +1,8 @@
-# 📗 Today I Learned 
-#### 성장을 위한 뿌리 내리기 
+# 📗 Today I Learned
+**성장을 위한 뿌리 내리기**
 ---
-
-## 📌 알고리즘
-- 23.03.23 Recursion 
-
----
-## 📌 코딩테스트
-
-### 프로그래머스
- #### level0
- - 23.03.22 순열
-
- #### level1
-
- #### level2
-  - 23.03.23 프린터 
-  - 23.03.23 알파벳(못품)
-
-### 백준
-
----
-## 📌 빅데이터
--Basic 찍먹
+### [알고리즘](https://github.com/WonJae0914/TIL_dreamscometrue/tree/master/Algorithm0)
+### [코딩테스트](https://github.com/WonJae0914/TIL_dreamscometrue/tree/master/CodingTest)
+### [빅데이터](https://github.com/WonJae0914/TIL_dreamscometrue/tree/master/BicData)
+### [데이터베이스](https://github.com/WonJae0914/TIL_dreamscometrue/tree/master/DataBase)
+### [자바](https://github.com/WonJae0914/TIL_dreamscometrue/tree/master/Java)
