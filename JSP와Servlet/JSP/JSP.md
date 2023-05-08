@@ -63,7 +63,7 @@ writer.prinln("<body>")
 writer.prinln("</body>")
 -> 이와 같은 식으로 HTML을 구성하기는 너무 어렵기 때문에 등장한 것이 JSP
 
-서블릿의 라이프 사이클
+#### 서블릿의 라이프 사이클
 
 <img src="/JSP와Servlet/JSP/img/servlet.jpg" alt="">
 
@@ -86,3 +86,36 @@ writer.prinln("</body>")
   
 4. Service(자원 해제 전까지 요청이 올때마다 반복 실행)
 
+#### 서블릿 내장객체 목록
+request : 요청 객체(doGet(), doPost() 메소드의 첫번째 파라미터)
+response : 요청 객체(doGEt(), doPost() 메소드의 두번째 파라미터)
+out : 웹 브라우저로 HTML 코드 출력
+application : JSP 페이지가 속한 웹 어플리케이션에 관련된 기능
+config : JSP 페이지의 구성 정보를 가져오는 기능
+pageContext : JSP 페이지 범위 내에서 사용할 수 있는 데이터 저장 기능
+session : 세션 관련 기능
+page : JSP 페이지에서 생성된 서블릿
+exception : 예외처리 
+
+
+#### Session 
+웹 사이트의 여러 페이지에 걸쳐서 사용되는 사용자 정보를 저장하는 방법 
+-> 여러개의 컴포넌트들이 협력 작업을 시작해 끝날 때까지의 기간
+
+**세션 만들기 예시**
+HttpSession session = request.getSession();
+session.setAttribute("name", "존준모")
+
+**세션 사용하기**
+HttpSession session = request.getSession();
+String name = (String) session.getAttribute("name");
+
+**세션 함수**
+세션 내용 삭제
+removeAttribute("키값"); 
+
+**세션 종료**
+invaildate();
+
+**세션 타임아웃 기간 설정**
+setMaxInactiveInertval(ms단위);
